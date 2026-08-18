@@ -35,6 +35,12 @@ pipeline {
                 echo "Jenkins URL: ${JENKINS_URL}"
             }
         }
+        
+        stage('Explore Workspace') {
+            steps {
+                echo "Workspace: ${WORKSPACE}"
+            }
+        }
          
         stage('Build') { 
             steps { 
